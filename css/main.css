@@ -1,0 +1,114 @@
+button {
+    background: #f7e311;
+    border-radius: 8px;
+    font-size: 22px;
+    border: black;
+}
+#logo{
+    height:65px;
+}
+#logoa{
+    float:right;
+}
+#lionnav li{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight:1000;
+}
+#mainNavBar{
+    background: #f7e311;
+    border-color: #00000;
+}
+#mainCarousel{
+    width:100%;
+    height: 400px;
+}
+#carouselContainer{
+    width:100%;
+}
+#hearinglink{
+    width: 100px;
+    height: 50px;
+}
+.carousel-content {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+#lionlogolink{
+    width:75px;
+}
+#summary{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color:blue;
+}
+#banner{
+    width: 1500px;
+    height:500px;
+    background: cover;
+}
+#topBodyDiv{
+    padding-top: 10px;
+}
+#bottomBodyDiv{
+    padding-top: 20px;
+}
+#maindivtitle{
+    border-bottom:solid 2px;  
+    border-color: #f7e311;
+}
+#titlediv p{
+    font-size: 115%;
+    font-weight:bold;
+}
+
+#maindivbody{
+    border-bottom: solid 2px;
+    border-color: #f7e311;
+    text-align: left;
+}
+#testimg{
+/*    height: 10%;*/
+}
+#maindiv h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 4 00;
+    text-align: center;
+    color:#013384;
+}
+#maindiv h4{
+    font-family: 'Lato', sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    color:#013384;
+}
+#eventsdivheader{
+    background: #0056b3;
+    border: solid 1px;
+    border-color:#00000;
+    padding-top: 5px;
+    border-width: 3px;
+}
+#eventsdivheader h3{
+    color: #f7e311;
+}
+#eventsdiv h3{
+    font-family: 'Coustard', serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing:2px;
+}
+#eventsdiv p{
+    font-weight: 300;
+}
+#event{
+    border-bottom: solid 2px;
+    background: #f7e311;
+}
