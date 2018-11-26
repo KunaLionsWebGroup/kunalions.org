@@ -15,6 +15,9 @@ button {
     font-size: 22px;
     font-weight:1000;
 }
+li.active{
+   color:#013384;
+}
 #mainNavBar{
     background: #f7e311;
     border-color: #00000;
@@ -59,7 +62,7 @@ button {
     padding-top: 20px;
 }
 #maindivtitle{
-    border-bottom:solid 2px;  
+    border-bottom:solid 2px;
     border-color: #f7e311;
 }
 #titlediv p{
