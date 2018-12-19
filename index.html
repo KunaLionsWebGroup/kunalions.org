@@ -44,25 +44,14 @@
                 <div id="eventsdivheader" class="card">
                     <h3>Current Events</h3>
                 </div>
+<!--
                 <div id="event" class="card">
                     <div class="card-body">
                         <h5 class="card-title">Kuna Lion's Meeting</h5>
                         <h6 class="card-text">1st and 3rd Monday</h6>
                     </div>
-                </div>
-                <div id="event" class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Sam's Double Egg Sausage McMuffin</h5>
-                        <h6 class="card-text">Friday 8/10/18</h6>
-                    </div>
-                </div>
-                <div id="event" class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">8th Annual Car Show</h5>
-                        <h6 class="card-text">Someday in 2019</h6>
-                    </div>
-                </div>
-            </div>
+                </div> -->
+          </div>
         </div>
     </div>
     <div id="bottomBodyDiv">
@@ -70,5 +59,21 @@
                 <img class="col-md-12" id="testimg" src="./img/test.jpg">
                 </div>
     </div>
+    <script>
+       $(document).ready(function(){
+          $.getJSON("events.json", function(lidata){
+             $.each(lidata, function(idx, obj){
+              $("#eventsdiv").append(
+                '<div id="event" class="card">' +
+                   '<div class="card-body">' +
+                      '<h5 class="card-title">' + obj.title + ' &nbsp; '+ obj.date + '</h5>'+
+                      '<h6 class="card-text">' + obj.snip +'</h6>'+
+                   '</div>'+
+                '</div>'
+             );
+             });
+          });
+       });
+    </script>
 </body>
 </html>
