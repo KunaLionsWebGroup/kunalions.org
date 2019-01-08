@@ -10,6 +10,7 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+<!-- ++++++++++++++++NAVIGATION BAR+++++++++++++++ -->
     <nav class="navbar navbar-expand-lg navbar-collapse" id="mainNavBar">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.html">
@@ -28,6 +29,7 @@
             </ul>
         </div>
     </nav>
+<!-- +++++++++++++ CONTENT +++++++++++++++++++++++++++  -->
     <div id="topBodyDiv">
         <div id="titlediv" class="container-fluid row">
             <div id="maindiv" class="col-md-8">
@@ -44,24 +46,7 @@
                 <div id="eventsdivheader" class="card">
                     <h3>Current Events</h3>
                 </div>
-                <div id="event" class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Kuna Lion's Meeting</h5>
-                        <h6 class="card-text">1st and 3rd Monday</h6>
-                    </div>
-                </div>
-                <div id="event" class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Sam's Double Egg Sausage McMuffin</h5>
-                        <h6 class="card-text">Friday 8/10/18</h6>
-                    </div>
-                </div>
-                <div id="event" class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">8th Annual Car Show</h5>
-                        <h6 class="card-text">Someday in 2019</h6>
-                    </div>
-                </div>
+            <!-- Scrip inserts HERE -->
             </div>
         </div>
     </div>
@@ -70,5 +55,21 @@
                 <img class="col-md-12" id="testimg" src="./img/test.jpg">
                 </div>
     </div>
+    <script>
+       $(document).ready(function(){
+          $.getJSON("events.json", function(lidata){
+             $.each(lidata, function(idx, obj){
+              $("#eventsdiv").append(
+                '<div id="event" class="card">' +
+                   '<div class="card-body">' +
+                      '<h5 class="card-title">' + obj.title + ' &nbsp; '+ obj.date + '</h5>'+
+                      '<h6 class="card-text">' + obj.snip +'</h6>'+
+                   '</div>'+
+                '</div>'
+             );
+             });
+          });
+       });
+    </script>
 </body>
 </html>

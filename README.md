@@ -13,3 +13,5 @@ Static resource package: [.zip](https://s3-us-west-2.amazonaws.com/static.kunali
 
 ### TODO
 For the todo list look at the Issues board.
+
+### [Test site](http://test.kunalions.org.s3-website-us-west-2.amazonaws.com/index.html)
