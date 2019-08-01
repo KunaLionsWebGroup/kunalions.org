@@ -6,15 +6,15 @@
       "content":"Our Monthly meeting is held on the first monday of each month at the Idaho Pizza Company in Kuna, ID"
    },
    {
-      "title":"Chilli Feed",
-      "date":"12-08-2018 4pm to 8pm",
-      "snip":"Kuna Lions Chilli feed at the Kuna Community Hall",
-      "content":"Join us for a chilli feed at the Kuna Community hall from 4 pm to 8pm"
-   },
-   {
       "title":"Car Show",
-      "date":"09-08-2019",
+      "date":"08-03-2019",
       "snip":"Kuna Lions annual Car Show",
       "content":"Kuna Lions Car Show"
+   },
+   {
+      "title":"Chilli Feed",
+      "date":"12-07-2019 4pm to 8pm",
+      "snip":"Kuna Lions Chilli feed at the Kuna Community Hall",
+      "content":"Join us for a chilli feed at the Kuna Community hall from 4 pm to 8pm"
    }
 ]
